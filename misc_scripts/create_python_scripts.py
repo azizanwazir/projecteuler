@@ -37,6 +37,8 @@ def create_python_files(drafts_folder, euler_file):
                     f.write('''# Project Euler Problem {}
 # Developer: {}
 # Title: {}
+
+# Project Euler Website: https://projecteuler.net/archives
                             '''.format(id, developer, title))
                 log_msg("success", "{} successfully created.".format(filename))
                 successful_files.append(str(id))
