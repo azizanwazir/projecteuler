@@ -1,0 +1,6 @@
+# ignore code workspace file
+*.code-workspace
+
+# ignore virtual environment folder
+**/.venv
+
