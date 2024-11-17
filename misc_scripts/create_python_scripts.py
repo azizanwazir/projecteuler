@@ -34,12 +34,21 @@ def create_python_files(drafts_folder, euler_file):
                 skipped_files.append(str(id))
             else:
                 with open(file_path, 'w') as f:
-                    f.write('''# Project Euler Problem {}
+                    f.write('''############################################################################
+
+# Project Euler Problem {}
 # Developer: {}
 # Title: {}
 
-# Project Euler Website: https://projecteuler.net/archives
-                            
+# Project Euler Website: https://projecteuler.net/problem={}
+
+# Description: 
+
+# Result: 
+# Time taken to run main function: 
+
+############################################################################
+
 import time
 from datetime import datetime
 
@@ -48,7 +57,7 @@ def log_msg(status, msg):
     date_str = datetime.strftime(datetime.now(), "%d %b %Y %H:%M:%S")
     status = status.upper().ljust(8)
     print("{{}} :: {{}} - {{}}".format(date_str, status, msg))
-                            
+
 def main():
     pass
                                                
@@ -58,7 +67,7 @@ if __name__ == "__main__":
     main()
     end_time = time.time() - start_time
     log_msg("info", "Time taken to run main function: {{}} seconds".format(end_time))
-                            '''.format(id, developer, title, id))
+                            '''.format(id, developer, title, id, id))
                     
                 log_msg("success", "{} successfully created.".format(filename))
                 successful_files.append(str(id))

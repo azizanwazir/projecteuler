@@ -1,9 +1,18 @@
+############################################################################
+
 # Project Euler Problem 117
 # Developer: Azizan Wazir
 # Title: Red, Green, and Blue Tiles
 
-# Project Euler Website: https://projecteuler.net/archives
-                            
+# Project Euler Website: https://projecteuler.net/problem=117
+
+# Description: 
+
+# Result: 
+# Time taken to run main function: 
+
+############################################################################
+
 import time
 from datetime import datetime
 
@@ -12,7 +21,7 @@ def log_msg(status, msg):
     date_str = datetime.strftime(datetime.now(), "%d %b %Y %H:%M:%S")
     status = status.upper().ljust(8)
     print("{} :: {} - {}".format(date_str, status, msg))
-                            
+
 def main():
     pass
                                                
