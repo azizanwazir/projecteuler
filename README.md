@@ -7,7 +7,7 @@ The 'drafts' folder will contain empty or unsolved scripts and the 'final' folde
 I have also included a script in 'misc_scripts' that will create empty Python scripts using data from 'project_euler.xlsx' so as to standardise the scripts I add to this repository.
 
 Thanks for checking in and hope something here has been helpful for you!
-- Azizan
+Azizan
 
 Project Euler Website: https://projecteuler.net/archives
 
