@@ -4,7 +4,7 @@
 # Developer: Azizan Wazir
 # Title: Multiples of 3 or 5
 
-# Project Euler Website: https://projecteuler.net/archives
+# Project Euler Website: https://projecteuler.net/problem=1
 
 # Description: Find the sum of all the multiples of 3 or 5 below 1000
 

@@ -1,15 +1,16 @@
 ############################################################################
 
-# Project Euler Problem 8
+# Project Euler Problem 6
 # Developer: Azizan Wazir
-# Title: Largest Product in a Series
+# Title: Sum Square Difference
 
-# Project Euler Website: https://projecteuler.net/problem=8
+# Project Euler Website: https://projecteuler.net/problem=6
 
-# Description: 
+# Description: Difference between the sum of squares of first 100 natural numbers 
+#               and the square of the sum
 
-# Result: 
-# Time taken to run main function: 
+# Result: Solved
+# Time taken to run main function: 0.0010001659393310547 seconds
 
 ############################################################################
 
@@ -23,10 +24,19 @@ def log_msg(status, msg):
     print("{} :: {} - {}".format(date_str, status, msg))
 
 def main():
-    pass
+    limit = 100 
+    list_of_numbers = range(1, limit + 1) # python Range(m, n) goes from m to n-1
+
+    sum_squares = sum([x**2 for x in list_of_numbers])
+    square_sums = sum(list_of_numbers)**2
+
+    difference = abs(sum_squares - square_sums)
+    log_msg("result", "Difference of Sum of Squares - Square of Sums: {}".format(difference))
+    return difference
+
                                                
 if __name__ == "__main__":
-    log_msg("info", "Starting processing of Problem 8")
+    log_msg("info", "Starting processing of Problem 6")
     start_time = time.time()
     main()
     end_time = time.time() - start_time
