@@ -93,14 +93,14 @@ def main():
         log_msg("info", "Drafts folder not found. Creating drafts folder now.")
         os.mkdir(drafts_folder)
     
-    log_msg("info", "Searching for project_euler_complete.xlsx")
-    euler_file = os.path.join(current_folder, "project_euler_complete.xlsx")
+    log_msg("info", "Searching for project_euler.xlsx")
+    euler_file = os.path.join(current_folder, "project_euler.xlsx")
     
     if not os.path.isfile(euler_file):
-        log_msg("error", "project_euler_complete.xlsx not found! Please ensure the Excel file is available. Expected columns: id, title")
+        log_msg("error", "project_euler.xlsx not found! Please ensure the Excel file is available. Expected columns: id, title")
         return -1
     else:
-        log_msg("info", "project_euler_complete.xlsx found. Creating Python files now.")
+        log_msg("info", "project_euler.xlsx found. Creating Python files now.")
     
     create_python_files(drafts_folder, euler_file)
 
