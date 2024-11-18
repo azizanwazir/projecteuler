@@ -6,7 +6,7 @@
 
 # Project Euler Website: https://projecteuler.net/problem=100
 
-# Description: 
+# Description: T
 
 # Result: 
 # Time taken to run main function: 
