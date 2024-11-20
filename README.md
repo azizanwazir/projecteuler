@@ -12,6 +12,8 @@ Project Euler Website: [Project Euler](https://projecteuler.net/archives)
 
 _Note: Sharing solutions beyond the first 100 problems outside the Project Euler website is not allowed, therefore any solutions I have to problems beyond Problem #100 will not be posted here._
 
+**Progress** : 15 / 100
+
 ### **Updates:**
 - 17th November 2024 : Restarted my journey again after a few (many) false starts.
 - 17th November 2024 : Solved Problems 1 to 5
