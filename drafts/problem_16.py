@@ -6,10 +6,10 @@
 
 # Project Euler Website: https://projecteuler.net/problem=16
 
-# Description: 
+# Description: What is the sum of the digits of the number 2^1000
 
-# Result: 
-# Time taken to run main function: 
+# Result: Solved
+# Time taken to run main function: 0.0014028549194335938 seconds
 
 ############################################################################
 
@@ -22,8 +22,16 @@ def log_msg(status, msg):
     status = status.upper().ljust(8)
     print("{} :: {} - {}".format(date_str, status, msg))
 
+# lets try brute force
+# Result: brute force works
 def main():
-    pass
+    result_value = 2**1000
+    result_str = str(result_value)
+    result_list = [int(x) for x in result_str]
+    result = sum(result_list)
+
+    log_msg("result", "Sum of digits: {}".format(result))
+    return result
                                                
 if __name__ == "__main__":
     log_msg("info", "Starting processing of Problem 16")
