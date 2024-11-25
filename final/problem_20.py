@@ -6,15 +6,17 @@
 
 # Project Euler Website: https://projecteuler.net/problem=20
 
-# Description: 
+# Description: Sum of digits in 100!
 
-# Result: 
-# Time taken to run main function: 
+# Result: Solved
+# Time taken to run main function: 0.00 seconds
 
 ############################################################################
 
 import time
 from datetime import datetime
+
+from math import factorial
 
 # for custom command line logging                            
 def log_msg(status, msg):
@@ -22,8 +24,16 @@ def log_msg(status, msg):
     status = status.upper().ljust(8)
     print("{} :: {} - {}".format(date_str, status, msg))
 
+'''
+Brute force
+'''
 def main():
-    pass
+    sum_val = factorial(100)
+    sum_str = str(sum_val)
+    result = sum([int(x) for x in sum_str])
+    log_msg("result", "Sum of digits in 100!: {}".format(result))
+    return result
+    
                                                
 if __name__ == "__main__":
     log_msg("info", "Starting processing of Problem 20")

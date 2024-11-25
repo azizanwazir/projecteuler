@@ -6,7 +6,7 @@
 
 # Project Euler Website: https://projecteuler.net/problem=21
 
-# Description: 
+# Description: Sum of all amicable numbers under 10,000
 
 # Result: 
 # Time taken to run main function: 
@@ -22,6 +22,14 @@ def log_msg(status, msg):
     status = status.upper().ljust(8)
     print("{} :: {} - {}".format(date_str, status, msg))
 
+'''
+d(n) = sum of proper divisors of n
+if d(a) = b and d(b) = a where a != b, (a,b) are an amicable pair
+a and b are called amicable numbers
+
+My method:
+1. 
+'''
 def main():
     pass
                                                
